@@ -1,0 +1,20 @@
+Work % cd samurai 
+samurai % mkdir git_challenge
+samurai % cd git_challenge 
+git_challenge % touch hello_world.txt
+git_challenge % echo 'Hello, world!' > hello_world.txt
+git_challenge % git init
+Initialized empty Git repository in /Users/yusakumorimitsu/Work/samurai/git_challenge/.git/
+git_challenge % git add hello_world.txt
+git_challenge % git commit -m "hello, world.txtを追加" 
+[main (root-commit) 08d035b] hello, world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+git_challenge % echo 'こんにちは、世界！' >> hello_world.txt
+git_challenge % git add hello_world.txt
+git_challenge % git commit -m "日本語訳を追記"              
+[main fefdb66] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+git_challenge % git log --oneline
+fefdb66 (HEAD -> main) 日本語訳を追記
+08d035b hello, world.txtを追加
